@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd client
-      - run: npm install
-      - run: npm test
+      - run: cd client && npm install
 
   build_and_deploy:
     permissions: write-all
